@@ -51,7 +51,10 @@ class MoviesPage extends Component {
                       <CardTitle tag="h5">{movie.title}</CardTitle>
                       <CardSubtitle tag="h6" className="mb-2 text-muted">
                         <small className="text-muted">{movie.showTime}</small>
-                        <BsFillHeartFill className="ml-3 ml-3 mr-1" />
+                        <BsFillHeartFill
+                          className="ml-3 ml-3 mr-1"
+                          style={{ color: "red" }}
+                        />
                         {movie.like}
                       </CardSubtitle>
                       <Button color="primary" size="sm" href={movie.id}>
